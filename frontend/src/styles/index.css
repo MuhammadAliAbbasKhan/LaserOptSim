@@ -1,0 +1,216 @@
+/* Base resets and font styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* BeamXpert Design System Color Tokens */
+:root {
+  --beam-bg-header: #ffffff;
+  --beam-nav-bg: #e5ebf2;
+  --beam-nav-hover: #d7e2ee;
+  --beam-nav-text: #1a202c;
+  --beam-nav-active: #0080ff;
+  --beam-cyan-primary: #0091ff;
+  --beam-cyan-glow: #00d2ff;
+  --beam-footer-bg: #d1dbe5;
+  --beam-footer-text: #2c3e50;
+  --beam-footer-heading: #1e293b;
+  --beam-card-border: #cbd5e1;
+}
+
+/* Header Specific BeamXpert Replica Styling */
+.beam-top-bar {
+  background-color: #ffffff;
+  padding: 1rem 2.5rem 0.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.beam-logo-container {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.beam-logo-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.beam-logo-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.beam-logo-text-bold {
+  font-weight: 700;
+}
+
+.beam-slogan-line {
+  height: 2px;
+  background: linear-gradient(90deg, #0091ff 0%, #00d2ff 100%);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.beam-tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.15rem;
+  color: #0091ff;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.beam-nav-bar {
+  background-color: var(--beam-nav-bg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #d4deea;
+  border-bottom: 1px solid #c5d3e2;
+  padding: 0 2rem;
+}
+
+.beam-nav-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2d3748;
+  padding: 0.9rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.beam-nav-link:hover {
+  background-color: var(--beam-nav-hover);
+  color: #0076e6;
+}
+
+.beam-nav-link.active {
+  color: #0076e6;
+  font-weight: 700;
+}
+
+.beam-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #0076e6;
+}
+
+/* Footer BeamXpert Replica Styling */
+.beam-footer {
+  background-color: var(--beam-footer-bg);
+  color: var(--beam-footer-text);
+  padding: 3.5rem 2.5rem 2rem 2.5rem;
+  font-size: 0.92rem;
+  border-top: 1px solid #bbc9d8;
+}
+
+.beam-footer h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--beam-footer-heading);
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+.beam-footer-link {
+  color: #334155;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.65rem;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.beam-footer-link:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Laser Optic Canvas / High Tech Cards */
+.laser-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.laser-card:hover {
+  box-shadow: 0 8px 30px rgba(0, 145, 255, 0.12);
+}
+
+.glow-btn-primary {
+  background: linear-gradient(135deg, #0076e6 0%, #0091ff 100%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 118, 230, 0.3);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.glow-btn-primary:hover {
+  background: linear-gradient(135deg, #0060be 0%, #0080e6 100%);
+  box-shadow: 0 6px 20px rgba(0, 118, 230, 0.45);
+  transform: translateY(-1px);
+}
+
+.glow-btn-secondary {
+  background: #f1f5f9;
+  color: #334155;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.glow-btn-secondary:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+/* Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
