@@ -105,7 +105,7 @@ export const AuthModal = ({ isOpen, onClose, setCurrentUser, setCurrentPage }) =
             </button>
 
             <button 
-              onClick={() => handleDemoLogin('admin@laseroptsim.com', 'LaserOpt#2026!Admin')}
+              onClick={() => handleDemoLogin('admin@laseroptsim.com', 'aliabbas1234578!')}
               className="text-xs font-semibold bg-slate-900 border border-slate-800 text-white p-2 rounded-lg text-left shadow-sm hover:bg-slate-800 transition-all"
             >
               <div className="flex items-center gap-1.5 text-amber-400 font-bold">

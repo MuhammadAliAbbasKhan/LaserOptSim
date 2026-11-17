@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Video, ExternalLink } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export const Footer = ({ setCurrentPage }) => {
@@ -24,21 +24,17 @@ export const Footer = ({ setCurrentPage }) => {
           
           {/* Column 1: Contact Address Details */}
           <div>
-            <p className="font-bold text-slate-900 mb-2">{t('footerCompany')}</p>
+            <p className="font-bold text-slate-900 mb-2">LaserOptSim</p>
             <p className="text-slate-700 leading-relaxed mb-4 text-xs">
-              Max-Planck-Straße 3<br />
-              12489 Berlin<br />
-              Germany
+              Address coming soon
             </p>
             <p className="text-slate-800 font-semibold mb-1 flex items-center gap-2 text-xs">
               <Phone className="w-4 h-4 text-blue-600" />
-              {t('footerPhone')}
+              Phone coming soon
             </p>
             <p className="text-slate-800 font-semibold flex items-center gap-2 text-xs">
               <Mail className="w-4 h-4 text-blue-600" />
-              <a href="mailto:info@laseroptsim.com" className="hover:underline text-blue-700">
-                {t('footerEmail')}
-              </a>
+              Email coming soon
             </p>
 
             <div className="mt-6 pt-4 border-t border-slate-300/60">
@@ -174,16 +170,7 @@ export const Footer = ({ setCurrentPage }) => {
               </li>
             </ul>
             
-            {/* Vimeo Badge */}
-            <a 
-              href="https://vimeo.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-slate-900 text-white font-bold italic px-3 py-1.5 rounded shadow hover:bg-blue-600 transition-colors text-xs"
-            >
-              <Video className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm tracking-wider">vimeo</span>
-            </a>
+            {/* TODO: add verified social links */}
           </div>
 
         </div>

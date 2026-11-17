@@ -104,7 +104,7 @@ export const AdminDashboardPage = ({ currentUser }) => {
           </form>
 
           <p className="text-[11px] text-center text-slate-500 font-mono">
-            Default Passcode: LaserOpt#2026!Admin
+            Default Passcode: aliabbas1234578!
           </p>
         </div>
       </div>
